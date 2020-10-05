@@ -1,0 +1,348 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+/* -------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.wrap {
+	background: url("../img/bg.png") right 0px no-repeat;
+	background-size: cover;
+}
+.inner {
+	width: 1120px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header__body {
+	padding-top: 30px;
+}
+.header__body-top {
+	margin-bottom: 35px;
+}
+.header__logotext {
+	display: inline-block;
+	margin: 0px 80px 0px 0px;
+}
+.header__logo {
+	display: inline-block;
+}
+.logo {
+	display: inline-block;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 63px;
+	color: #e1e1e1;
+	text-transform: uppercase;
+}
+.header__line {
+	display: inline-block;
+	width: 2px;
+	height: 40px;
+	margin: 0px 20px 0px 20px;
+	background-color: #89afef;
+}
+.header__text {
+	display: inline-block;
+	width: 180px;
+}
+.header__social {
+	display: inline-block;
+	margin-right: 50px;
+	position: relative;
+	top: -17px;
+}
+.header__social a {
+	margin-right: 18px;
+}
+.header__social a:last-child {
+	margin-right: 0;
+}
+.header__social .wsap img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0px 0px -42px;
+}
+.wsap {
+	text-align: center;
+	padding-top: 12px;
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	background-color: #2dd038;
+	/* background: url("../img/wsap.png") 0px 0px no-repeat; */
+}
+.wsap:hover {
+	box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+}
+.header__social .viber img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -16px 0px 0px -42px;
+}
+.viber {
+	text-align: center;
+	padding-top: 12px;
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	background-color: #7b519d;
+	/* background: url("../img/viber.png") 0px 0px no-repeat; */
+}
+.viber:hover {
+	box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+}
+.header__social .telegram img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -14px 0px 0px -45px;
+}
+.telegram {
+	text-align: center;
+	padding-top: 12px;
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	background-color: #5bbaf0;
+	/* background: url("../img/telegram.png") 0px 0px no-repeat; */
+}
+.telegram:hover {
+	box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+}
+.header__contact {
+	display: inline-block;
+}
+.contact__fone-mail {
+	display: inline-block;
+	margin-right: 25px;
+	width: 195px;
+	text-align: right;
+}
+.fone {
+	display: inline-block;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+	color: #333333;
+	background: url("../img/call.png") 0px 4px no-repeat;
+	padding: 0px 0px 0px 25px;
+}
+
+.fone:hover {
+	text-shadow: 0px 0px 1px #333;
+	padding: 0px 0px 0px 22px;
+}
+.mail:hover {
+	text-shadow: 0px 0px 1px #333;
+	padding: 0px 0px 0px 20px;
+}
+.mail {
+	display: inline-block;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 20px;
+	text-align: right;
+	color: #333333;
+	background: url("../img/mail.png") 0px 5px no-repeat;
+	padding: 0px 0px 0px 22px;
+}
+.contact__btn {
+	display: inline-block;
+	position: relative;
+}
+.btn__bell {
+	padding: 11px 25px 12px 25px;
+	background: linear-gradient(90deg, #f6bd60 0%, #e88952 100%);
+	border-radius: 3px;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 195px;
+}
+.btn__bell:hover {
+	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+}
+
+.header__list li {
+	display: inline-block;
+	margin-right: 45px;
+}
+.header__list li:last-child {
+	margin-right: 0;
+}
+.header__link {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #333333;
+	padding-bottom: 5px;
+}
+.header__link:hover {
+	border-bottom: 2px solid #333;
+}
+/* ----------------------------- */
+.main {
+	padding: 110px 0px 180px 0px;
+}
+.main__body-text {
+	display: inline-block;
+	width: 675px;
+}
+.main__item {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 51px;
+	color: #333333;
+	margin-bottom: 35px;
+}
+.main__text {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #333333;
+	margin-bottom: 35px;
+}
+.main__text span {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 31px;
+	color: #333333;
+}
+.main__button {
+	display: inline-block;
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 15px 60px 16px 60px;
+	background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+	border-radius: 3px;
+}
+.main__button:hover {
+	box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+}
+.main__body {
+	position: relative;
+}
+.main__body-img {
+	display: inline-block;
+	cursor: pointer;
+	width: 390px;
+	position: relative;
+}
+.main__body-img .f1 {
+	max-width: 100%;
+	position: absolute;
+	bottom: -205px;
+	right: 0;
+}
+.f2 {
+	display: none;
+	max-width: 100%;
+	position: absolute;
+	bottom: -205px;
+	right: 0;
+}
+.main__body-img:hover .f2 {
+	display: inline-block;
+}
+.main__body-img:hover .f1 {
+	display: none;
+}
